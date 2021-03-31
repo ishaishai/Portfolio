@@ -19,3 +19,36 @@
   position: relative;
   margin: auto;
 }
+.about-subcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  color: darkslategrey;
+  background-color: white;
+  width: 100%;
+}
+
+.about-img {
+  position: absolute;
+  left: 5vw;
+  width: 40vw;
+  height: 40vh;
+}
+
+.about-info {
+  width: 35vw;
+  left: 55vw;
+  position: absolute;
+}
+
+.about-info-title {
+  font-size: 1.8rem;
+}
+
+.about-info-details {
+  word-break: normal;
+  margin-top: 5vh;
+  font-size: 0.8rem;
+}

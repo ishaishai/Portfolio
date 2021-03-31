@@ -1,0 +1,75 @@
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: darkslategrey;
+  background-color: white;
+}
+
+.projects-subcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  color: darkslategrey;
+  background-color: white;
+  width: 100%;
+}
+
+.skills-info-title {
+  font-size: 1.8rem;
+}
+.skills-info-subtitle {
+  margin-top: 5vh;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.skills-img {
+  width: 40vw;
+  height: 40vh;
+}
+.skills-info {
+  width: 35vw;
+}
+
+.skills-info-details {
+  word-break: normal;
+  font-size: 0.8rem;
+}
+
+.project-container {
+  display: flex;
+  margin: 5vw auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-title {
+  font-size: 1.2rem;
+}
+.project-description,
+.project-img {
+  margin-top: 3vh;
+  box-shadow: 4px 4px 25px rgb(47, 79, 79);
+  width: 20vw;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.5s linear;
+  border-radius: 50%;
+}
+.project-description {
+  cursor: pointer;
+  background-color: rgb(47, 79, 79, 0.2);
+  margin-top: 6vh;
+  position: absolute;
+  font-size: 2rem;
+}
+
+.project-img img {
+  width: 10vw;
+  height: 20vh;
+}

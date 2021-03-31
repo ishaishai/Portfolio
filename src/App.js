@@ -2,6 +2,8 @@ import Navbar from "./components/navbar/Navbar";
 import "./App.css";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
 
 const App = () => {
   return (
@@ -9,6 +11,8 @@ const App = () => {
       <Navbar />
       <Home />
       <About />
+      <Skills />
+      <Projects />
     </div>
   );
 };

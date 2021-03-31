@@ -33,9 +33,12 @@
   color: inherit;
 }
 
-.navbar-item:hover,
-:focus {
+.navbar-item:hover {
   border-bottom: 2px solid white;
+}
+
+.navbar-item a:active {
+  color: darkslategrey;
 }
 
 /* background-color: darkslategrey; */
