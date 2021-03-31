@@ -1,0 +1,21 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: darkslategrey;
+  background-color: white;
+}
+
+.about-title {
+  margin-top: 5%;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2rem;
+}
+
+.about-title-border {
+  border-bottom: 3px solid #4f67fb;
+  width: 3vw;
+  position: relative;
+  margin: auto;
+}

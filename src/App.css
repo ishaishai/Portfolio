@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #4f67fb;
+  font-family: "Rubik", sans-serif;
+}
