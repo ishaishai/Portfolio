@@ -34,7 +34,20 @@
   width: 35vw;
 }
 
-.skills-info-details {
+.contact-info-details {
   word-break: normal;
   font-size: 0.8rem;
+  margin-top: 1vh;
+  width: min-content;
+}
+.contact-info-details a,
+:visited {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.contact-info-details-border {
+  border-bottom: 1px solid darkblue;
+  width: 30px;
+  margin: auto;
 }

@@ -5,9 +5,13 @@ import Portfolio from "../../assets/Portfolio.png";
 import Thought from "../../assets/bubble-speech.png";
 const Projects = () => {
   const myprojects = [
-    { name: "Dashboard Generator", src: Dashboard },
-    { name: "Thoughts Wall", src: Thought },
-    { name: "Portfolio", src: Portfolio },
+    {
+      name: "Dashboard Generator",
+      src: Dashboard,
+      link: "http://185.60.170.80:5050",
+    },
+    { name: "Thoughts Wall", src: Thought, link: null },
+    { name: "Portfolio", src: Portfolio, link: null },
   ];
   return (
     <div className="skills-container" id="Projects">
@@ -17,7 +21,7 @@ const Projects = () => {
       </div>
       <div className="projects-subcontainer">
         {myprojects.map((item) => (
-          <Project title={item.name} src={item.src} />
+          <Project title={item.name} src={item.src} link={item.link} />
         ))}
       </div>
     </div>

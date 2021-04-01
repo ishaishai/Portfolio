@@ -20,6 +20,9 @@ const Project = (props) => {
         <div
           className="project-description"
           onMouseLeave={() => setClickZone(!clickZone)}
+          onClick={() => {
+            window.location.href = props.link;
+          }}
         >
           Tap To Open
         </div>

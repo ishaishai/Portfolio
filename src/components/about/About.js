@@ -13,9 +13,10 @@ const About = () => {
           <div className="about-info-title">I'm Ishai Yaish.</div>
           Web Apps Developer
           <div className="about-info-details">
-            A Full Stack Engineer, looking for a back\front\full-stack position.
+            Ambitious B.sc Computer Science graduate and a Full Stack Engineer,
+            looking for a backend/frontend/full-stack position.
             <br />
-            feel free to walk around and visit my github page also
+            feel free to walk around and visit my github page also.
           </div>
         </div>
       </div>
