@@ -1,0 +1,40 @@
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: darkslategrey;
+  background-color: white;
+}
+
+.skills-subcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: darkslategrey;
+  background-color: white;
+  width: 90%;
+}
+
+.skills-info-title {
+  font-size: 1.8rem;
+}
+.skills-info-subtitle {
+  margin-top: 5vh;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.skills-img {
+  width: 40vw;
+  height: 40vh;
+}
+.contact-info {
+  width: 35vw;
+}
+
+.skills-info-details {
+  word-break: normal;
+  font-size: 0.8rem;
+}
