@@ -10,8 +10,16 @@ const Projects = () => {
       src: Dashboard,
       link: "http://185.60.170.80:5050",
     },
-    { name: "Thoughts Wall", src: Thought, link: null },
-    { name: "Portfolio", src: Portfolio, link: null },
+    {
+      name: "Thoughts Wall",
+      src: Thought,
+      link: "https://thoughtswall.herokuapp.com",
+    },
+    {
+      name: "Portfolio",
+      src: Portfolio,
+      link: "https://portfolio-6772a.web.app",
+    },
   ];
   return (
     <div className="skills-container" id="Projects">

@@ -59,12 +59,16 @@
     width: 70vw;
     height: 30vh;
   }
+  .project-description {
+    height: 30vh;
+    width: 70vw;
+  }
   .project-container .project-img img {
     width: 55%;
     height: 55%;
   }
   #Contact {
-    margin-top: 50vh;
+    margin-top: 40vh;
   }
   #Contact .skills-subcontainer {
     flex-direction: column-reverse;
