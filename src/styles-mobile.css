@@ -32,14 +32,26 @@
     width: 40vw;
     height: 40vw;
   }
-  .about-container,
-  .home-container {
-    padding-top: 10vw;
+
+  .about-container {
+    height: 90vh;
   }
+
+  .about-container .about-info-details {
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+  }
+
   .skills-subcontainer,
   .projects-subcontainer,
   .about-subcontainer {
     flex-direction: column;
+    justify-content: space-evenly;
+    height: 80vh;
+  }
+
+  .skills-subcontainer {
+    margin-top: 3vh;
   }
   .about-subcontainer .about-img,
   .about-subcontainer .about-info {
@@ -58,6 +70,8 @@
   .project-container .project-img {
     width: 70vw;
     height: 30vh;
+
+    overflow: hidden;
   }
   .project-description {
     height: 30vh;
@@ -67,8 +81,21 @@
     width: 55%;
     height: 55%;
   }
+  .projects-subcontainer {
+    height: auto;
+  }
+  .home-container,
+  #About,
+  #Skills,
+  #Projects,
   #Contact {
-    margin-top: 40vh;
+    padding-top: 5vh;
+  }
+  #Projects {
+    height: 130vh;
+  }
+  #Contact {
+    margin-top: 10vh;
   }
   #Contact .skills-subcontainer {
     flex-direction: column-reverse;
@@ -78,5 +105,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .contact-info .skills-info-title {
+    width: max-content;
   }
 }

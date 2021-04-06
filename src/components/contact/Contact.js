@@ -13,7 +13,7 @@ const Contact = () => {
         <div className="firstCircle"></div>
 
         <div className="contact-info">
-          <div className="skills-info-title">Contact details</div>
+          {/* <div className="skills-info-title">Contact details</div> */}
           <div className="skills-info-subtitle">Email</div>
           <div className="contact-info-details">ishaiyaish@gmail.com</div>
           <div className="skills-info-subtitle">Phone</div>
