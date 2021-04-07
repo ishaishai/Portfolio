@@ -7,7 +7,14 @@ const Navbar = () => {
   const navbarItems = ["Home", "About", "Skills", "Projects", "Contact"];
   const [collapse, setCollapse] = useState(true);
   const [mobile, setMobile] = useState(window.innerWidth <= 768 ? true : false);
-
+  const [visited,setVisited] = useState(false);
+  useEffect(() => {
+    if(!visited) {
+      const response = await axios.post("https://loggingapp-server.herokuapp.com/api/log", "Portfolio");
+      setVisited(true);
+      console.log(response.data);
+    }     
+  }, [])
   window.addEventListener("resize", (event) => {
     if (event.currentTarget.screen.width < 768) {
       setMobile(true);
