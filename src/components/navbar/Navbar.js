@@ -3,18 +3,23 @@ import NavbarItem from "./NavbarItem";
 import { FaHamburger } from "react-icons/fa";
 import { RiMenuFoldLine } from "react-icons/ri";
 import { useState, useEffect } from "react";
+import axios from "axios";
+
 const Navbar = () => {
   const navbarItems = ["Home", "About", "Skills", "Projects", "Contact"];
   const [collapse, setCollapse] = useState(true);
   const [mobile, setMobile] = useState(window.innerWidth <= 768 ? true : false);
-  const [visited,setVisited] = useState(false);
-  useEffect(() => {
-    if(!visited) {
-      const response = await axios.post("https://loggingapp-server.herokuapp.com/api/log", "Portfolio");
+  const [visited, setVisited] = useState(false);
+  useEffect(async () => {
+    if (!visited) {
+      const response = await axios.post(
+        "https://loggingapp-server.herokuapp.com/api/log",
+        { source: "Portfolio" }
+      );
       setVisited(true);
       console.log(response.data);
-    }     
-  }, [])
+    }
+  }, []);
   window.addEventListener("resize", (event) => {
     if (event.currentTarget.screen.width < 768) {
       setMobile(true);
