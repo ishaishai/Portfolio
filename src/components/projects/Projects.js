@@ -3,6 +3,7 @@ import Project from "./Project";
 import Dashboard from "../../assets/dashboard.svg";
 import Portfolio from "../../assets/Portfolio.png";
 import Thought from "../../assets/bubble-speech.png";
+import DogPlay from "../../assets/dog-face.svg";
 const Projects = () => {
   const myprojects = [
     {
@@ -14,6 +15,11 @@ const Projects = () => {
       name: "Thoughts Wall",
       src: Thought,
       link: "https://thoughtswall.herokuapp.com",
+    },
+    {
+      name: "Dogs-Play (in dev)",
+      src: DogPlay,
+      link: "https://dogs-play-bf278.web.app",
     },
     {
       name: "Portfolio",
