@@ -92,7 +92,7 @@
     padding-top: 5vh;
   }
   #Projects {
-    height: 130vh;
+    height: fit-content;
   }
   #Contact {
     margin-top: 10vh;
