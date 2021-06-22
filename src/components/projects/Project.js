@@ -14,7 +14,7 @@ const Project = (props) => {
         style={{ filter: clickZone ? "opacity(0.2)" : "opacity(1)" }}
         onMouseEnter={() => setClickZone(!clickZone)}
       >
-        <img src={props.src ? props.src : null} />
+        <img src={props.src ? props.src : null} alt={props.alt} />
       </div>
       {clickZone ? (
         <div
@@ -25,6 +25,13 @@ const Project = (props) => {
           }}
         >
           Tap To Open
+          {props.auth && (
+            <div className="project-credentials">
+              Test Credentials: "tester"
+              <br />
+              *limited access
+            </div>
+          )}
         </div>
       ) : null}
     </div>

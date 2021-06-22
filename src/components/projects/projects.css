@@ -56,10 +56,15 @@
   width: 20vw;
   height: 40vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   transition: filter 0.5s linear;
   border-radius: 50%;
+}
+.project-credentials {
+  font-size: 1rem;
 }
 .project-description {
   cursor: pointer;
