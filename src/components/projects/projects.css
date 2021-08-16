@@ -63,8 +63,10 @@
   transition: filter 0.5s linear;
   border-radius: 50%;
 }
-.project-credentials {
+.project-alt {
+  margin-top: 1vh;
   font-size: 1rem;
+  white-space: pre-line;
 }
 .project-description {
   cursor: pointer;

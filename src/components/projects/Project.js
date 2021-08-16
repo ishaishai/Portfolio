@@ -3,9 +3,6 @@ import { useState, useEffect } from "react";
 const Project = (props) => {
   const [clickZone, setClickZone] = useState(false);
 
-  useEffect(() => {
-    console.log(clickZone);
-  }, [clickZone]);
   return (
     <div className="project-container">
       <div className="project-title">{props.title}</div>
@@ -14,7 +11,7 @@ const Project = (props) => {
         style={{ filter: clickZone ? "opacity(0.2)" : "opacity(1)" }}
         onMouseEnter={() => setClickZone(!clickZone)}
       >
-        <img src={props.src ? props.src : null} alt={props.alt} />
+        <img src={props.src ? props.src : null} />
       </div>
       {clickZone ? (
         <div
@@ -24,14 +21,8 @@ const Project = (props) => {
             window.location.href = props.link;
           }}
         >
-          Tap To Open
-          {props.auth && (
-            <div className="project-credentials">
-              Test Credentials: "tester"
-              <br />
-              *limited access
-            </div>
-          )}
+          {props.title !== "Doggie-Date" && "Tap To Open"}
+          {props.alt && <div className="project-alt">{props.alt}</div>}
         </div>
       ) : null}
     </div>
