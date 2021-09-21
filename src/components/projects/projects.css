@@ -7,15 +7,19 @@
   background-color: white;
 }
 
+#Projects {
+  height: max-content;
+}
+
 .projects-subcontainer {
+  flex-flow: wrap;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 100vh;
   color: darkslategrey;
   background-color: white;
-  width: 100%;
+  width: 80%;
 }
 
 .skills-info-title {

@@ -4,6 +4,8 @@ import Dashboard from "../../assets/dashboard.svg";
 import Portfolio from "../../assets/Portfolio.png";
 import Thought from "../../assets/bubble-speech.png";
 import DogPlay from "../../assets/dog-face.svg";
+import Checkers from "../../assets/checkers.svg";
+
 const Projects = () => {
   const myprojects = [
     {
@@ -23,6 +25,12 @@ const Projects = () => {
       src: DogPlay,
       link: "null",
       alt: `React Native App in development\n*avaliable on meet`,
+    },
+    {
+      name: "Checkers Game",
+      src: Checkers,
+      link: "https://checkers-game-4d944.web.app",
+      alt:null,
     },
     {
       name: "Portfolio",
