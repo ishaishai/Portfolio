@@ -92,12 +92,7 @@
   #Contact {
     padding-top: 10vh;
   }
-  #Projects {
-    height: 130vh;
-  }
-  #Contact {
-    margin-top: 40vh;
-  }
+
   #Contact .skills-subcontainer {
     flex-direction: column-reverse;
     text-align: center;
